@@ -1,0 +1,19 @@
+Nguồn: Wrath of Math
+
+1. Spanning subgraph
+- H là đồ thị con bao trùm của G <=> V(H) = V(G) và E(H) là con của E(G)
+
+2. Induced subgraph (Đồ thị con cảm sinh)
+- Cho S là tập con của G, ta nói đồ thị con G[S] là đồ thị con cảm sinh trên tập đỉnh S nếu 2 đỉnh kể nhau khi và chỉ khi
+chúng nằm trong G
+- Để tạo ra một đồ thị con cảm sinh, ta có thể xóa các đỉnh và các cạnh kề với đỉnh đó
+
+- Cách phát biểu của Mathispower4u: Ta nói G' = (V', E') là đồ thị con cảm sinh của G = (V, E) nếu với V' thuộc V
+thì mọi cạnh của tập E mà có 2 đỉnh đầu mút nằm trong V' cũng là cạnh của E'
+
+
+3. Geodisc (Khoảng cách)
+- Cho G là đồ thị liên thông. Ta định nghĩa khoảng cách giữa 2 đỉnh u và v là độ dài đường đi ngắn nhất từ u đến v
+
+4. Diameter (Đường kính)
+- Đường kính của đồ thị liên thông G, kí hiệu diam(G), là khoảng cách lớn nhất có thể có giữa 2 đỉnh trong G

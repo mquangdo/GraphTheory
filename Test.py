@@ -54,7 +54,7 @@ I = nx.complete_graph(5)    # do thi thay du K_5
 # nx.draw_spring(I)
 
 J = nx.complete_bipartite_graph(3, 3)
-nx.draw_spring(J)
+nx.draw_spring(J, with_labels = True)
 
 print(I.degree)
 
@@ -65,7 +65,16 @@ def check_bipartite(G):
         else:
             return 'This is a bipartite graph'
 
+def is_hamiltonian(G):
+    n = len(G.degree)
+    for i in range(n):
+        if G.degree[i] < n / 2:
+            return 'Inconclusion'
+        else:
+            return 'Hamiltonian'
 
-print(check_bipartite(I))
+print(is_hamiltonian(I))
 
 plt.show()
+
+
